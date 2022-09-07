@@ -28,4 +28,4 @@ As future work:
 
 *  Implementation can benefit from higher level interface using specific package [transformers4rec](https://pypi.org/project/transformers4rec/).
 
-*  Use the movies title from .json file inside the .zip, to propose a language based embedding than one hot encoded movie indices.
+*  Use the movies title from .json file inside the .zip, to propose a language-based movie embedding instead of one hot encoded movie indices.
