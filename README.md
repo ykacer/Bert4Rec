@@ -10,7 +10,7 @@ Then the model is used in production by right-appending a mask token to input se
  
 It gets advantages of bi-directional objective but due to nature of inputs you cannot benefit from large corpus pretraining like we tradiionally do with Bert on raw texts.
  
-The notebook `run.py` is standalone and runnable on colab. It is your responsability to provide path to the .zip TFrecord containing input movies sessions.
+The notebook `run.py` is standalone and runnable on colab. It is your responsability to provide path to the `recommandation.zip` TFrecord containing input movies sessions (the file is to big to be uploaded and possibly subject to restrictions...)
  
 This notebook can be summarized as follow:
  
@@ -27,3 +27,5 @@ As future work:
 *  The training should not only mask a given session randomly but also force last session element masking.
 
 *  Implementation can benefit from higher level interface using specific package [transformers4rec](https://pypi.org/project/transformers4rec/).
+
+*  Use the movies title from .json file inside the .zip, to propose a language based embedding than one hot encoded movie indices.
