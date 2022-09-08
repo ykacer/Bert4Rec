@@ -16,7 +16,7 @@ This notebook can be summarized as follow:
  
 *  a `Data` section that read TFRecord to construct a `tf.Data.Dataset`. On particular, it prepares train/val/test sessions (padding, mask token) to feed model.
  
-*  a `Modelling` section to instantiates the model. Here we take advantage of `transformers` and `datasets` packages
+*  a `Modelling` section to instantiates the model. Here we take advantage of `transformers` and `datasets` packages from HuggingFace.com
 
 *  an `Evaluation` section to provide Hit Max Ratio {k} metric (very similar to top-k accuracy in classifiation)
 
@@ -28,4 +28,4 @@ As future work:
 
 *  Implementation can benefit from higher level interface using specific package [transformers4rec](https://pypi.org/project/transformers4rec/).
 
-*  Use the movies titles from to propose a language-based movie embedding instead of one hot encoded movie indices.
+*  Use the texts movies titles to propose a language-based movie embedding instead of one hot encoded movie indices.
